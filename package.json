@@ -1,5 +1,5 @@
 {
-  "name": "qr-code-generator",
+  "name": "@ljreaux/qr-code-generator",
   "version": "1.0.0",
   "description": "A simple CLI QR Code Generator.",
   "main": "bin/index.js",
