@@ -1,0 +1,17 @@
+{
+  "name": "qr-code-generator",
+  "version": "1.0.0",
+  "description": "A simple CLI QR Code Generator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Larry Reaux",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/select": "^2.2.0",
+    "inquirer": "^9.2.16",
+    "qr-image": "^3.2.0"
+  },
+  "type": "module"
+}
