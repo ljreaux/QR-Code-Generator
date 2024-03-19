@@ -4,8 +4,12 @@ This is a simple QR code generator using node.js. Allows you to enter a url, fil
 
 Link to the NPM page [here](https://www.npmjs.com/package/@ljreaux/qr-code-generator).
 
-run command is
+install command
+```terminal
+npm i @ljreaux/qr-code-generator
+```
 
+run command
 ```terminal
 createQR
 ```
