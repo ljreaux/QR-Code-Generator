@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import inquirer from "inquirer";
 import select from '@inquirer/select'
 import qr from "qr-image"
@@ -9,7 +11,7 @@ const getUserInput = async () => {
         name: 'URL'
     }]) 
     const fileName = await inquirer.prompt([{
-        message: "Please enter a name for your new QR Code:",
+        message: "Please enter a file name for your new QR Code:",
         name: 'fileName'
     }]) 
     const fileType = await select({
@@ -45,7 +47,7 @@ const createQR = async () => {
     const QR = qr.image(URL, {...type})
 
     QR.pipe(fs.createWriteStream(`${fileName}.${type}`))
-    fs.writeFile(fileName, JSON.stringify(userInput), (error)=>{
+    fs.writeFile(`${fileName}.txt`, JSON.stringify(userInput), (error)=>{
         if(error) throw error
         try {
             console.log("The file has been saved!");
