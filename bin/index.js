@@ -36,7 +36,7 @@ const getUserInput = async () => {
 
         ]
     })
-    console.log({...url, ...fileName, type: fileType})
+    
     return {...url, ...fileName, type: fileType}
 }
 
