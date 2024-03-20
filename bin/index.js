@@ -25,6 +25,18 @@ const getUserInput = async () => {
         name: "png",
         value: "png",
       },
+      {
+        name: "svg",
+        value: "svg",
+      },
+      {
+        name: "pdf",
+        value: "pdf",
+      },
+      {
+        name: "eps",
+        value: "eps",
+      },
     ],
   });
 
